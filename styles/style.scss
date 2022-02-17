@@ -1,0 +1,77 @@
+@import './variables';
+*{
+    font-family: Victor Mono;
+    margin: 0;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+    margin:0 auto;
+    .options{
+        display:flex;
+        justify-content: space-around;
+        .addButton{
+            margin-left:50px;
+            margin-top: 5px;
+            button{
+                padding: 5px 20px;
+                border:none;
+                border-radius: 5px;
+                background-color: $addButtonColor;
+                &:hover{
+                    background-color: $hoverAddButtonColor;
+                }
+            }
+        }
+    
+        .clearTask{
+            margin-left:50px;
+            margin-top: 5px;
+           button{
+               padding: 5px 20px;
+               border:none;
+               border-radius: 5px;
+               background-color: $clearColor;
+               &:hover{
+                   background-color:$hoverClearColor;
+               }
+        }
+    }
+        .getinfo{
+            margin-top:8px;
+            input{
+                width:400px;
+                height: 30px;
+                border: 0.02rem solid blue;
+            }
+        }
+    }
+    .list{
+        ul{
+            div{
+                display:flex;
+                margin-top: 10px;
+                justify-content: space-between;
+                align-items: center;
+                width:520px;
+                border: 0.02rem solid blue;
+                transform: translateX(-23px);
+                border-radius:2px;
+                input{
+                    border:none;
+                }
+                li{
+                    list-style:none;
+                }
+                button{
+                    border:none;
+                    background-color: $deleteColor;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
+
